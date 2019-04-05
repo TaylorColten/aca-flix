@@ -12,7 +12,7 @@ export function loadMyMovieList() {
     };
   }
   
-  export function myMovieListLoaded(movies) {
+   function myMovieListLoaded(movies) {
     return {
       type: "MY_MOVIE_LIST_LOADED",
       value: movies
@@ -34,7 +34,7 @@ export function loadMyMovieList() {
     };
   }
     
-  export function searchLoaded(movies) {
+   function searchLoaded(movies) {
     return {
       type: "SEARCH_RESULTS_LOADED",
       value: movies.results
