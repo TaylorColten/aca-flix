@@ -3,7 +3,11 @@ import React, {Component} from "react";
 class SearchBox extends Component {
   constructor() {
     super();
+    this.state = {
+      searchTerm: ""
+    };
   }
+  
   render() {
     return (
       <div id="search" className="Search">
