@@ -6,7 +6,12 @@ class SearchBox extends Component {
     this.state = {
       searchTerm: ""
     };
+    this.handleChange = this.handleChange.bind(this);
   }
+
+  handleChange(e) {
+    this.setState({searchTerm: e.target.value})
+  };
   
   render() {
     return (
